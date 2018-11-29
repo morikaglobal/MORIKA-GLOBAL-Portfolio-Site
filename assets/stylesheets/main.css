@@ -1,0 +1,346 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+/* 
+TOP landing section 
+*/
+
+.jumbotron-extend {
+    position: relative;
+    height: 100vh;
+    min-height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../images/background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.jumbotron {
+    border-radius: 0;
+}
+
+#title {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+/* Navbar */
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='green' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border: unset;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus, 
+.navbar-toggler:hover {
+    outline: none;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-weight: 600;    
+}
+
+/* Navbar scroll change color */
+
+.navbar.scrolled {
+    background: white !important;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+}
+
+.navbar-dark.scrolled a.navbar-brand {
+    color: green !important;
+}
+
+.navbar.scrolled li a {
+    color:black !important;
+}
+
+.navbar.scrolled li .active {
+    border-bottom: 4px solid green;
+}
+
+/* 
+ABOUT section 
+*/
+
+.about-text h3 {
+    font-size: 32px;
+}
+
+.about-text h4 {
+    font-size: 18px;
+}
+
+.about-text {
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/* 
+SKILLS section 
+*/
+
+#skills {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/skillset.jpg);
+    min-height: 250px;
+    background-size: cover;
+    padding: 96px 15px 48px 15px;
+}
+
+.skillbox {
+    background: white;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.course {
+    width: 200px;
+    margin: 10px 0;
+}
+
+.card-img-top {
+    width: 250px;
+    max-width: 90%;
+    border-radius: unset;
+    padding: 10px 0;
+    display: block;
+}
+
+/* 
+PORTFOLIO section 
+*/
+
+#portfolio {
+    padding: 96px 15px 0 15px;
+}
+
+#work2 .info {
+    margin-top: 15px;
+}
+
+#portfolio .row {
+    margin: 80px 0 48px 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.demo {
+    width: 145px;
+    background-color: #23b7e5;
+    border-color: #23b7e5;
+    border-radius: unset;
+    margin: 0 5px 10px 0; 
+}
+
+.source {
+    width: 145px;
+    background-color: #7266ba;
+    border-color: #7266ba;
+    border-radius: unset;
+    margin: 0 5px 10px 0; 
+}
+
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+/* 
+CONTACT section 
+*/
+
+#contactme {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/contact.jpg);
+    min-height: 500px;
+    background-size: cover;
+}
+
+.contactbox {
+    padding-top: 64px;
+}
+
+.contact h3,
+.contact h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.contact h4 {
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+span {
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+
+.contacticon {
+    width: 60%;
+    margin: 0 auto;  
+}
+
+#hidden,
+.nostyle > a {
+    text-decoration: none;
+}
+
+a#hidden h4,
+a#hidden {
+    color: white;
+    white-space: nowrap;
+}
+
+.nostyle,
+.nostyle > a {
+    color: inherit;
+}
+
+#name,
+#email {
+    width: 65%;
+}
+
+.form-control {
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #a2a2a2;
+    border-radius: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-left: 0;
+}
+
+.form-group input[type="text"]:focus,
+input[type="email"]:focus,
+.form-control:focus {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #a2a2a2;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color:#a2a2a2;
+    font-weight: normal;
+}
+
+#send {
+    margin-top: 20px;
+}
+
+#green {
+    color: green;
+    font-weight: 600;
+}
+
+.pagetop {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.pagetop > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Form Validation Messages  */
+
+/* apply to any id with "errormsg" */
+div[id*="errormsg"] {
+  color:#F00;
+  padding-top: 10px;
+}
+
+/* 
+MEDIA QUERY 
+*/
+
+@media only screen and (min-width: 1024px) {
+    
+    /* SKILLS secion */
+    .skillbox {
+        width: 65%;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* PORTFOLIO secion */
+    .img-fluid {
+       width: 100%;
+       max-width: 500px;
+    }
+
+    /* CONTACT secion */
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (min-width: 640px) {
+    
+    /* CONTACT secion */
+    #name, 
+    #email {
+        width: 40%;
+    }
+
+    /* SKILLS secion */
+    .course {
+        width: 250px;
+        margin: 10px 0;
+    }
+
+    /* PORTFOLIO secion */
+    .img-fluid {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 420px) {
+    
+    .navbar-brand {
+        font-size: 32px;
+    }
+
+}
+
