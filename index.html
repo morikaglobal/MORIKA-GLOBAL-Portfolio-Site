@@ -10,7 +10,6 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-130241617-1');
-
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics ends -->
 
@@ -69,7 +68,17 @@
             <h2>Front End Web Developer</h2>
             <p><a class="btn btn-primary btn-lg" href="#portfolio" role="button">SEE MY WORK</a></p>
         </div>
+
+
+        <a class="pointer hidden-xs" href="#about">
+                <span class="icon-scroll">
+                    <span class="movement"></span>
+                </span>
+            </a>
+
+
     </div>
+
 
     <div class="container text-center" id="about">
         <div class="about-text">
@@ -114,7 +123,7 @@
                             <li>CSS3</li>
                             <li>Bootstrap4</li>
                             <li>JavaScript</li>
-                            <li>JQuery</li>
+                            <li>jQuery</li>
                             <br>
                             <li>Git/GitHub</li>
                         </ul>
@@ -156,10 +165,10 @@
                     <li>Fully Responsive Design</li>
                 </ul>
                 <div class="text-center">
-                    <a href="https://tokyoconference.netlify.com/" class="btn btn-info demo" target="_blank">
+                    <a href="https://tokyoconference.netlify.com/" class="btn btn-info demo" target="_blank" Onclick="ga('send', 'event', 'link', 'click', 'Click for Tokyo Conference Live Demo', true);">
                                 <i class="fa fa-desktop mr5"></i>Live Demo</a>
 
-                    <a href="https://github.com/morikaglobal/Tokyo-Conference" class="btn btn-primary source" target="_blank">
+                    <a href="https://github.com/morikaglobal/Tokyo-Conference" class="btn btn-primary source" target="_blank" Onclick="ga('send', 'event', 'link', 'click', 'Click for Tokyo Conference Source Code', true);">
                                         <i class="fas fa-code mr5"></i>View Source</a>
                 </div>
             </div>
@@ -181,10 +190,10 @@
                     <li>Email displayed but hidden with BASE64</li>
                 </ul>
                 <div class="text-center">
-                    <a href="#top" class="btn btn-info demo">
+                    <a href="#top" class="btn btn-info demo" Onclick="ga('send', 'event', 'link', 'click', 'Click for Portfolio Site Live Demo', true);">
                                     <i class="fa fa-desktop mr5"></i>Live Demo</a>
 
-                    <a href="#" class="btn btn-primary source" target="_blank">
+                    <a href="#" class="btn btn-primary source" target="_blank" Onclick="ga('send', 'event', 'link', 'click', 'Click for Portfolio Site Source Code', true);">
                                     <i class="fas fa-code mr5"></i>View Source</a>
                 </div>
             </div>
@@ -200,21 +209,23 @@
                 <h4 class="pb-4"><span class="text-center">Interested in my work? </span><span>Please get in touch!</span></h4>
 
                 <div class="row text-center text-white font-weight-bold justify-content-center contacticon">
-                    <div class="col">
+                    <div class="col-md-3 col-12 my-2">
 
                         <i class="far fa-envelope fa-2x pb-2"></i><br>
-                        <a href="" id="hidden">
+                        <a href="" id="hidden" Onclick="ga('send', 'event', 'link', 'click', 'Click to see the email address', true);">
                             <h4>CLICK FOR EMAIL</h4>
                         </a>
 
                     </div>
 
-                    <div class="col">
+                    <div class="col-md-3 col-6 my-2">
+                        <a class="nostyle" href="https://twitter.com/morikaglobal" target="_blank" Onclick="ga('send', 'event', 'link', 'click', 'Click on twitter icon', true);">
                         <i class="fab fa-twitter fa-2x mx-3"></i>
+                            </a>
                     </div>
 
-                    <div class="col">
-                        <a class="nostyle" href="https://github.com/morikaglobal" target="_blank">
+                    <div class="col-md-3 col-6 my-2">
+                        <a class="nostyle" href="https://github.com/morikaglobal" target="_blank" Onclick="ga('send', 'event', 'link', 'click', 'Click on github icon', true);">
                         <i class="fab fa-github fa-2x mx-3"></i>
                         </a>
                     </div>
@@ -260,68 +271,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <script>
-        
-        // to underline the navbar item of the page section as page is scrolled
-        $('body').scrollspy({ target: '#navbar-scroll' });
-
-        // to change the background and font color of the Navbar when page scrolled
-        // function to switch between 2 classes assigned with different background and font colors
-        $(window).scroll(function () {
-            $('nav').toggleClass('scrolled', $(this).scrollTop() > 250);
-        });
-
-        // to hide and show the email with click for contact section jQuery
-        $(function () {
-            $("a#hidden").click(function (e) {
-                //console.log('Fired');
-                var secret = function () { return atob('c21AbW9yaWthZ2xvYmFsLmNvbQ==') };
-                $(this).attr("href", 'mailto:' + secret());
-                $(this).text(secret());
-                $(this).off("click");
-                e.preventDefault();
-            });
-        });
-
-        // Contact Form input valiadtion
-
-        function validateForm() {
-            var name = document.contactform.name.value,
-                emailRegex = /^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/,
-                email = document.contactform.email.value,
-                message = document.contactform.message.value;
-
-            if (name == "") {
-                document.getElementById("errormsg1").innerHTML =
-                    "Please enter your name.";
-                // console.log("no Name entered!");
-                // return false and data will not be posted
-                return false;
-            } else {
-                document.getElementById("errormsg1").innerHTML = "";
-            } if (email == "") {
-                document.getElementById("errormsg2").innerHTML =
-                    "Please enter your Email.";
-                return false;
-            } else if (!emailRegex.test(email)) {
-                document.getElementById("errormsg2").innerHTML =
-                    "Please enter the valid email";
-                return false;
-            } else {
-                document.getElementById("errormsg2").innerHTML = "";
-            } if (message == "") {
-                document.getElementById("errormsg3").innerHTML =
-                    "Please type your message.";
-                return false;
-            } else {
-                document.getElementById("errormsg3").innerHTML = "";
-                // console.log("all ok!");
-                // return true will post the data
-                return true;
-            }
-        }
-
-    </script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
