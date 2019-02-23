@@ -198,7 +198,7 @@ PORTFOLIO section
     padding: 96px 15px 0 15px;
 }
 
-#work2 .info {
+#work2 .info, #work3 .info {
     margin-top: 15px;
 }
 
