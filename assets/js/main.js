@@ -7,6 +7,11 @@ $(window).scroll(function () {
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 250);
 });
 
+// to display the tooltip when twitter icon is hovered
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+
 // to hide and show the email with click for contact section jQuery
 $(function () {
     $("a#hidden").click(function (e) {
