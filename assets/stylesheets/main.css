@@ -198,10 +198,6 @@ PORTFOLIO section
     padding: 96px 15px 0 15px;
 }
 
-#work2 .info, #work3 .info {
-    margin-top: 15px;
-}
-
 #portfolio .row {
     margin: 80px 0 48px 0;
 }
@@ -229,6 +225,15 @@ PORTFOLIO section
 
 .fa {
     font: normal normal normal 14px/1 FontAwesome;
+}
+
+#scraperimg {
+    max-height: 300px;
+}
+
+#notebookimg{
+    border: 1px outset rgb(247, 247, 247);
+    box-shadow: 5px 5px rgb(247, 247, 247);
 }
 
 /* 
@@ -357,6 +362,15 @@ MEDIA QUERY
 
 @media only screen and (min-width: 768px) {
 
+    /* SKILLS secion */
+    #spacing {
+        padding-top: 20px;
+    }
+
+    #spacing div {
+        padding: 15px 0;
+    }
+
     /* PORTFOLIO secion */
     .img-fluid {
        width: 100%;
@@ -376,6 +390,16 @@ MEDIA QUERY
     
     .hidden-xs {
         display: none!important;
+    }
+
+    /* Navbar */
+    #menu-bg {
+        background-color: darkgrey;
+    }
+
+    /* PORTFOLIO secion */
+    #portfolio .row .info {
+        margin-top: 15px;
     }
     
 }

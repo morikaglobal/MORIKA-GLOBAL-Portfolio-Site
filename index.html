@@ -41,7 +41,7 @@
                           <span class="navbar-toggler-icon"></span>
                         </button>
                 <div class="collapse navbar-collapse text-center" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto" id="menu-bg">
                         <li class="nav-item">
                             <a class="nav-link" href="#about">ABOUT</a>
                         </li>
@@ -65,7 +65,7 @@
     <div class="jumbotron jumbotron-extend mb-0">
         <div class="container-fluid text-center text-white" id="title">
             <h1>MORIKA | Portfolio</h1>
-            <h2>Web developer with passion in data science</h2>
+            <h2>coder with passion in data analytics</h2>
             <p><a class="btn btn-primary btn-lg" href="#portfolio" role="button">SEE MY WORK</a></p>
         </div>
 
@@ -85,7 +85,7 @@
 
             <h3>Welcome to my Portfolio</h3>
 
-            <h4><span>I am Front end web developer</span><span>with passion in Data Science,</span><br><span>bilingual in Japanese and English</span><span> with Sales/Consultation/Business Development background</span></h4>
+            <h4><span>I am a female coder</span><span>with passion in Data Analysis,</span><br><span>bilingual in Japanese and English</span><span> with Sales/Consultation/Business Development background</span></h4>
 
             <p>Please take a look at projects that I have worked on<br> and feel free to contact me for any questions
                 <span>or if you are interested in working together, please get in touch!</span></p>
@@ -98,7 +98,7 @@
     <div class="container-fluid" id="skills">
 
         <div class="row justify-content-center text-white mb-3">
-            <div class="col-md-3 col-9 d-flex justify-content-around skillicon">
+            <div class="col-lg-3 col-md-9 col-sm-6 d-flex justify-content-around skillicon">
                 <i class="fab fa-html5 fa-2x"></i>
 
                 <i class="fab fa-css3 fa-2x"></i>
@@ -107,17 +107,24 @@
 
                 <i class="fab fa-python fa-2x"></i>
 
+                <!-- <i class="fab fa-database fa-2x"></i> -->
+                <i class="fa fa-database fa-2x"></i>
+
                 <i class="fab fa-github fa-2x"></i>
             </div>
         </div>
 
         <div class="row justify-content-center skillbox">
 
+
+
             <div class="col-md-6 card-group">
                 <div class="card-body">
                     <h5 class="card-title text-center font-weight-bold"><i class="fas fa-code mr5"></i>Skillset</h5>
                     <p class="card-text">
                         <ul>
+                            <li>Google Analytics Individual Qualification (GAIQ)</li>
+                            <li>Google AdWords Certified</li>
                             <li>UI/UX design</li>
                             <li>Responsive web design</li>
                             <br>
@@ -127,7 +134,8 @@
                             <li>JavaScript</li>
                             <li>jQuery</li>
                             <br>
-                            <li>Python (numpy, Beautiful Soup, Flask and etc.)</li>
+                            <li>Python (NumPy, pandas, matplotlib, Jupyter Notebook, Flask and more)</li>
+                            <li>SQL (SQLite, PostgreSQL, BigQuery)</li>
                             <br>
                             <li>Git/GitHub</li>
                         </ul>
@@ -138,15 +146,28 @@
             <div class="col-md-6">
                 <div class="card-body text-center">
                     <h5 class="card-title  text-center font-weight-bold"><i class="fas fa-laptop-code mr5"></i>Coding Courses</h5>
-                    <p class="card-text text-center">I have learnt from and participated in Front end web development bootcamps and online hackathons from
-                        below institutions:
-                    </p>
-
-                    <a href="https://frontendmasters.com/" target="_blank">
-                        <img class="card-img-top mx-auto" src="assets/images/frontendmasters.png" alt="Frontend Masters"></a>
-                    <a href="https://women-in-tech.org/" target="_blank">
-                        <img class="card-img-top mx-auto" src="assets/images/womenintech.jpg" alt="Women in Tech"></a>
-
+            
+                    <div class="d-flex flex-column justify-content-around" id="spacing">
+            
+                        <div>
+                            <p class="card-text text-center">I have learnt from and participated in Front end web development
+                                bootcamps and
+                                online hackathons from
+                                below institutions:
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://frontendmasters.com/" target="_blank">
+                                <img class="card-img-top mx-auto" src="assets/images/frontendmasters.png"
+                                    alt="Frontend Masters"></a>
+                        </div>
+            
+                        <div>
+                            <a href="https://women-in-tech.org/" target="_blank">
+                                <img class="card-img-top mx-auto" src="assets/images/womenintech.jpg" alt="Women in Tech"></a>
+                        </div>
+                    </div>
+            
                 </div>
             </div>
         </div>
@@ -157,13 +178,109 @@
         <h3 class="text-center mb-5">Portfolio</h3>
 
         <div class="row">
+                <div class="col-md-6 col-lg-7 text-center">
+                    <a href="https://newsdatasummaryapp.herokuapp.com/" target="_blank">
+                        <img class="img-fluid" src="assets/images/appscreenshot.png" alt="NEWS DATA SUMMARIZER APP"></a>
+                </div>
+                <div class="col-md-6 col-lg-5 info">
+                    <h4 class="text-center">News Data Summarizer App</h4>
+                    <p>Python web application to scrape and summarize web news data with Python libraries and NLP processing</p>
+                    <ul>
+                        <li>Built with Python</li>
+                        <li>Data extracted, parsed and summarized with newspaper3k</li>
+                        <li>Web deployment with Flask and heroku</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="https://newsdatasummaryapp.herokuapp.com/" class="btn btn-info demo" target="_blank">
+                            <i class="fa fa-desktop mr5"></i>Live Demo</a>
+            
+                        <a href="https://github.com/morikaglobal/newsdatasummary_app" class="btn btn-primary source" target="_blank">
+                            <i class="fas fa-code mr5"></i>View Source</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-6 col-lg-7 text-center">
+                    <a href="https://nbviewer.jupyter.org/github/morikaglobal/SFFilms_BigQuery_Data_Analysis/blob/master/GitHub_SFfilmlocation.ipynb" target="_blank">
+                        <img class="img-fluid" id="notebookimg" src="assets/images/sffilmjupyter.png" alt="San Francisco Film Location Jupyter Notebook"></a>
+                </div>
+                <div class="col-md-6 col-lg-5 info">
+                    <h4 class="text-center">Jupyter Notebook<br>BigQuery Data Analysis</h4>
+                    <p>Analysis on BigQuery Public Dataset on San Francisco Film Location using Python and SQL</p>
+                    <ul>
+                        <li>Data Loading with BigQuery/SQL</li>
+                        <li>Data Wrangling with Pandas and NumPy</li>
+                        <li>Data Manipulation for analysis</li>
+                        <li>Data Visualization with matplotlib</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="https://nbviewer.jupyter.org/github/morikaglobal/SFFilms_BigQuery_Data_Analysis/blob/master/GitHub_SFfilmlocation.ipynb" class="btn btn-info demo" target="_blank">
+                            <i class="fa fa-desktop mr5"></i>Live Demo</a>
+            
+                        <a href="https://github.com/morikaglobal/SFFilms_BigQuery_Data_Analysis" class="btn btn-primary source" target="_blank">
+                            <i class="fas fa-code mr5"></i>View Source</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-7 text-center">
+                <a href="https://pythonnewsscraper.herokuapp.com/" target="_blank">
+                    <img class="img-fluid" id="scraperimg" src="assets/images/newsscraperapp.png" alt="NEWS SCRAPER APP"></a>
+            </div>
+            <div class="col-md-6 col-lg-5 info">
+                <h4 class="text-center">News Scraper App</h4>
+                <p>Python web application to scrape, extract and load News website data using Beautiful Soup</p>
+                <ul>
+                    <li>Built with Python</li>
+                    <li>Data scraped with Beautiful Soup</li>
+                    <li>Web deployment with Flask and heroku</li>
+                </ul>
+                <div class="text-center">
+                    <a href="https://pythonnewsscraper.herokuapp.com" class="btn btn-info demo" target="_blank">
+                        <i class="fa fa-desktop mr5"></i>Live Demo</a>
+        
+                    <a href="https://github.com/morikaglobal/python_newsscraperapp" class="btn btn-primary source"
+                        target="_blank">
+                        <i class="fas fa-code mr5"></i>View Source</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-7 text-center">
+                <a href="https://recyclefinderhk.netlify.com/" target="_blank">
+                    <img class="img-fluid" src="assets/images/recyclefinderhk.png" alt="RECYCLEFinder HK"></a>
+            </div>
+            <div class="col-md-6 col-lg-5 info">
+                <h4 class="text-center">RECYCLEFinder HK</h4>
+                <p>API Web application with interactive map to search and locate recyclable points in Hong Kong</p>
+                <ul>
+                    <li>Built with HTML5, CSS3, Bootstrap4 and JavaScript</li>
+                    <li>API with axios</li>
+                    <li>Fully Responsive Design</li>
+                </ul>
+                <div class="text-center">
+                    <a href="https://recyclefinderhk.netlify.com/" class="btn btn-info demo" target="_blank"
+                        Onclick="ga('send', 'event', 'link', 'click', 'Click for RECYCLEFinderHK Live Demo', true);">
+                        <i class="fa fa-desktop mr5"></i>Live Demo</a>
+        
+                    <a href="https://github.com/morikaglobal/RECYCLEFinderHK" class="btn btn-primary source" target="_blank"
+                        Onclick="ga('send', 'event', 'link', 'click', 'Click for RECYCLEFinderHK Source Code', true);">
+                        <i class="fas fa-code mr5"></i>View Source</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
             <div class="col-md-6 col-lg-7 text-center">
                 <a href="https://tokyoconference.netlify.com/" target="_blank">
                 <img class="img-fluid" id="work1img"  src="assets/images/tokyoconference.png" alt="Tokyo Conference"></a>
             </div>
             <div class="col-md-6 col-lg-5 pt-3 info">
                 <h4 class="text-center">Tokyo Conference</h4>
-                <p>Multi-page responsive Conference website.</p>
+                <p>Multi-page responsive Conference website</p>
                 <ul>
                     <li>Built with HTML5, CSS3 and Bootstrap4</li>
                     <li>Fully Responsive Design</li>
@@ -179,14 +296,14 @@
 
         </div>
 
-        <div class="row" id="work2">
+        <div class="row">
             <div class="col-md-6 col-lg-7 text-center">
                 <a href="#top">
                 <img class="img-fluid" src="assets/images/morikaglobal.png" alt="MORIKA GLOBAL Portfolio Site"></a>
             </div>
             <div class="col-md-6 col-lg-5 info">
                 <h4 class="text-center">Portfolio Site</h4>
-                <p>Modern, professional and responsive one page portfolio site to introduce and showcase MORIKA GLOBAL.</p>
+                <p>Modern, professional and fully responsive one page portfolio site</p>
                 <ul>
                     <li>Built with HTML5, CSS3, Bootstrap4 and JavaScript</li>
                     <li>Fully Responsive Design</li>
@@ -203,52 +320,9 @@
             </div>
         </div>
 
-        <div class="row" id="work3">
-            <div class="col-md-6 col-lg-7 text-center">
-                <a href="https://recyclefinderhk.netlify.com/" target="_blank">
-                <img class="img-fluid" src="assets/images/recyclefinderhk.png" alt="RECYCLEFinder HK"></a>
-            </div>
-            <div class="col-md-6 col-lg-5 info">
-                <h4 class="text-center">RECYCLEFinder HK</h4>
-                <p>API Web application with interactive map to search and locate recyclable points in Hong Kong</p>
-                <ul>
-                    <li>Built with HTML5, CSS3, Bootstrap4 and JavaScript</li>
-                    <li>API with axios</li>
-                    <li>Fully Responsive Design</li>  
-                </ul>
-                <div class="text-center">
-                    <a href="https://recyclefinderhk.netlify.com/" class="btn btn-info demo" target="_blank" Onclick="ga('send', 'event', 'link', 'click', 'Click for RECYCLEFinderHK Live Demo', true);">
-                                    <i class="fa fa-desktop mr5"></i>Live Demo</a>
-
-                    <a href="https://github.com/morikaglobal/RECYCLEFinderHK" class="btn btn-primary source" target="_blank" Onclick="ga('send', 'event', 'link', 'click', 'Click for RECYCLEFinderHK Source Code', true);">
-                                    <i class="fas fa-code mr5"></i>View Source</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" id="work4">
-            <div class="col-md-6 col-lg-7 text-center">
-                <a href="https://pythonnewsscraper.herokuapp.com/" target="_blank">
-                    <img class="img-fluid" src="assets/images/newsscraperapp.png" alt="NEWS SCRAPER APP"></a>
-            </div>
-            <div class="col-md-6 col-lg-5 info">
-                <h4 class="text-center">News Scraper App</h4>
-                <p>Python web application to scrape web news data with Python libraries</p>
-                <ul>
-                    <li>Built with Python</li>
-                    <li>Data scraped with Beautiful Soup</li>
-                    <li>Web deployment with Flask and heroku</li>
-                </ul>
-                <div class="text-center">
-                    <a href="https://pythonnewsscraper.herokuapp.com" class="btn btn-info demo" target="_blank">
-                        <i class="fa fa-desktop mr5"></i>Live Demo</a>
         
-                    <a href="https://github.com/morikaglobal/python_newsscraperapp" class="btn btn-primary source" target="_blank">
-                        <i class="fas fa-code mr5"></i>View Source</a>
-                </div>
-            </div>
-        </div>
 
+        
     </div>
 
     <footer id="contactme">
@@ -269,7 +343,7 @@
                     </div>
 
                     <div class="col-md-3 col-6 my-2">
-                        <a class="nostyle" href="#" Onclick="ga('send', 'event', 'link', 'click', 'Click on twitter icon', true);">
+                        <a class="nostyle" href="" Onclick="ga('send', 'event', 'link', 'click', 'Click on twitter icon', true);">
                         <i class="fab fa-twitter fa-2x mx-3" data-toggle="tooltip" data-placement="top" title="COMING SOON"></i>
                             </a>
                     </div>
@@ -306,7 +380,7 @@
             <p class="text-white text-center mt-5 pagetop">
                 <a href="#top">PAGE TOP</a></p>
 
-            <p class="text-white text-center py-1 mb-0 nostyle"><a href="#work1img">Built designed and hard coded with <i class="fas fa-heart text-danger"></i> by <span id="green">MORIKA GLOBAL</span>© 2018</a></p>
+            <p class="text-white text-center py-1 mb-0 nostyle"><a href="#work1img">Built, designed and hard coded with <i class="fas fa-heart text-danger"></i> by <span id="green">MORIKA</span>© 2018</a></p>
 
         </div>
 
