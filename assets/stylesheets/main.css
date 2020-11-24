@@ -376,6 +376,10 @@ MEDIA QUERY
        width: 100%;
        max-width: 500px;
     }
+    
+    .docanalyzer{
+        margin: 20% 0;
+    }
 
     /* CONTACT secion */
     form {
